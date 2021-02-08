@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.body{
+			background-image: url(https://wallpaperscave.ru/images/original/18/01-11/tv-series-adventure-time-8566.jpg);
+			height: 725px;
+			background-size: 100% 100%;
+		}
+		.menu{
+			background: #fff76b;
+			width:  180px;
+			padding-left: 20px;
+			padding-top: 3px;
+			height: 410px 
+		}
+		.div1{
+			position: absolute;
+			left: 50px;
+			top: 660px;
+			
+			
+		}
+		.div2{
+			position: absolute;
+			left: 1400px;
+			top: 630px;
+			
+			
+		}
+		.div3{
+			position: absolute;
+			left: 600px;
+			top: 500px;
+			
+			;
+		}
+		.div4{
+			position: absolute;
+			left: 450px;
+			top: 50px;
+			
+			
+		}
+		.head{
+			margin-right: auto;
+			margin-left: auto;
+
+		}
+		.btn{
+			background: black;
+			height: 30px;
+			width: 100px;
+			border: none;
+			color: white;
+			font-size: 20px;
+		}
+		.img{
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="menu">
+			<h1 class="head">
+				MENU
+			</h1>
+			<h2 class="object1">
+				Fin and Jake
+			</h2>
+			<h2 class="object2">
+				Marceline
+			</h2>
+			<h2 class="object3">
+				Lumpy Space Princess
+			</h2>
+			<h2 class="object4">
+				Prinsesse Bubblegum
+			</h2>
+			<h2>ОЧКИ: <span class="score"></span></h2>
+			<div class="div1">
+				<img src="https://avatanplus.com/files/resources/original/5768204c19d671556ebe294a.png" class="img">
+			</div>
+			<div class="div2">
+				<img src="1.png" class="img">
+			</div>
+			<div class="div3">
+				<img src="2.png" class="img">
+			</div>
+			<div class="div4">
+				<img src="3.png" class="img">
+			</div>
+			<button class="btn"  style="">
+				Заново
+			</button>
+			
+		
+	</div>
+
+	<script type="text/javascript">
+		let num = 0;
+		document.querySelector('.score').innerHTML = num;
+		document.querySelector('.div1').onclick = function(){
+			num = num + 1;
+			document.querySelector('.score').innerHTML = num;
+			alert('Молодец!');
+			document.querySelector('.div1').style.display = 'none'
+			document.querySelector('.object1').style.display = 'none'
+		}
+		document.querySelector('.div2').onclick = function(){
+			num = num + 1;
+			document.querySelector('.score').innerHTML = num;
+			alert('Молодец!');
+			document.querySelector('.div2').style.display = 'none'
+			document.querySelector('.object2').style.display = 'none'
+		}
+		document.querySelector('.div3').onclick = function(){
+			num = num + 1;
+			document.querySelector('.score').innerHTML = num;
+			alert('Молодец!');
+			document.querySelector('.div3').style.display = 'none'
+			document.querySelector('.object3').style.display = 'none'
+		}
+		document.querySelector('.div4').onclick = function(){
+			num = num + 1;
+			document.querySelector('.score').innerHTML = num;
+			alert('Молодец!');
+			document.querySelector('.div4').style.display = 'none'
+			document.querySelector('.object4').style.display = 'none'
+		}
+		document.querySelector('.btn').onclick = function(){
+			num = 0;
+			document.querySelector('.score').innerHTML = num;
+			document.querySelector('.div4').style.display = 'block'
+			document.querySelector('.object4').style.display = 'block'
+			document.querySelector('.div3').style.display = 'block'
+			document.querySelector('.object3').style.display = 'block'
+			document.querySelector('.div2').style.display = 'block'
+			document.querySelector('.object2').style.display = 'block'
+			document.querySelector('.div1').style.display = 'block'
+			document.querySelector('.object1').style.display = 'block'
+		}
+	</script>
+
+
+
+
+</body>
+</html>
